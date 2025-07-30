@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link href="{% static 'css/wordle_clone.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<!-- <div class="title_container"> -->
+<h2 class="game_title">Wordle Clone</h2>
+<!-- </div> -->
+
+
+<div class="container">
+  <div class="rules">
+    <h3>Rules</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sed, maiores consectetur veritatis, accusantium
+      blanditiis veniam esse odio natus, quo placeat! Illum, est. Sunt delectus eum molestiae tempora perferendis
+      reprehenderit?</p>
+  </div>
+
+  <div class="grid_container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+
+  <div class="history">
+    <h3>History</h3>
+    <div>word : تمرين - tries : 4</div>
+    <div>word : تمرين - tries : 3</div>
+    <div>word : تمرين - tries : 5</div>
+    <div>word : تمرين - tries : 2</div>
+
+  </div>
+
+
+</div>
+
+{% endblock %} {% block js %}
+<script src="{% static 'js/wordle_clone.js' %}"></script>
+{% endblock %}

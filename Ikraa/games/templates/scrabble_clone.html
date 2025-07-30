@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link href="{% static 'css/scrabble_clone.css' %}" rel="stylesheet" />
+{% endblock %} {% block content %}
+<!-- <div class="title_container"> -->
+<h2 class="game_title">Scrabble Clone</h2>
+<!-- </div> -->
+
+<div class="container">
+  <div class="grid_container"></div>
+
+  <div id="player-number"></div>
+  <div id="lists_container">
+    <!-- <div class="letter_list"></div>
+    <div class="letter_list"></div>
+    <div class="letter_list"></div>
+    <div class="letter_list"></div> -->
+  </div>
+  <button id="check-word">Check Word</button>
+
+  <button id="forgo-turn">Forgo turn</button>
+</div>
+
+
+{% endblock %} {% block js %}
+<script type="module" src="{% static 'js/scrabble_clone.js' %}"></script>
+<script type="module" src="{% static 'js/scrabble_drag_n_drop.js' %}"></script>
+<script type="module" src="{% static 'js/scrabble_classes.js' %}"></script>
+<script type="module" src="{% static 'js/scrabble_funcs.js' %}"></script>
+
+{% endblock %}

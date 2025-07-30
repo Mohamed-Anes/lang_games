@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  justify-content: left;
+  background-color: rgb(225, 225, 225);
+  direction: ltr;
+}
+
+.home {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  margin-left: 2%;
+}

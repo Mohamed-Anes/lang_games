@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+<h2 class='title'>Welcome Traveler</h2>
+
+Games :
+<ul>
+    <li>
+        <a href="{% url 'wordle' %}">- Arabic Wordle Clone</a>
+    </li>
+    <li>
+        <a href="{% url 'scrabble' %}">- Arabic Scrabble Clone</a>
+    </li>
+</ul>
+
+{% endblock %}

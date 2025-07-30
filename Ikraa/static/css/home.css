@@ -1,0 +1,10 @@
+body {
+  direction: ltr;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-size: xx-large;
+  margin: 5%;
+}

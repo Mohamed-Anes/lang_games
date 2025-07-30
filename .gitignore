@@ -1,0 +1,22 @@
+# Python-related
+*.pyc
+*.pyo
+__pycache__/
+venv/
+.env
+Lib/
+Scripts/
+Include/
+*.cfg
+
+# Django-related
+*.log
+*.sqlite3
+Ikraa/db.sqlite3
+media/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*~

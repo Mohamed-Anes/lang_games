@@ -1,0 +1,87 @@
+.title_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.game_title {
+  text-align: center;
+  font-size: 3dvw;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Rules styling */
+.rules {
+  direction: ltr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* text-align: center; */
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.rules h3 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* history styling */
+.history {
+  direction: ltr;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  /* text-align: center; */
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.history h3 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* grid styling */
+.grid_container {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  width: 25vw;
+  height: 30vw;
+  margin: auto;
+  /* margin-left: 37.5vw;
+  margin-right: 37.5vw; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  font-size: 3dvw;
+}
+
+.square {
+  border-radius: 3px;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+}
+
+.grey_square {
+  background-color: grey;
+}
+
+.yellow_square {
+  background-color: yellow;
+}
+
+.green_square {
+  background-color: green;
+}

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Website Title</title>
+  <!-- Add your CSS and JS files here -->
+  <!-- For example: -->
+  <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+  <!-- <script src="{% static 'js/script.js' %}"></script -->
+  <link href="{% static 'output.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+  {% block css %} {% endblock %}
+</head>
+
+<body>
+  <header>
+    <!-- Add your header content here -->
+    <!-- For example: -->
+    <!-- <h1>Your Website</h1> -->
+    <nav>
+      <div class="home">
+        <a href="{% url 'home' %}">Home</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>{% block content %} {% endblock %}</main>
+
+  <footer>
+    <!-- Add your footer content here -->
+    <!-- For example: -->
+    <!-- <p>&copy; 2023 Your Website. All rights reserved.</p> -->
+  </footer>
+
+  <script src="{% static 'tw-elements/dist/js/tw-elements.umd.min.js' %}" type="text/javascript"></script>
+
+  {% block js %} {% endblock %}
+</body>
+
+</html>
